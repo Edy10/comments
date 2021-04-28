@@ -1,4 +1,4 @@
-# comentario
+# Comentários em VUJS
 
 ## Project setup
 ```
