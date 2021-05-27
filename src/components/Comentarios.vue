@@ -23,7 +23,7 @@
                             <v-btn class="ma-2" text icon color="blue lighten-2" @click="curti(index, 'P')">
                                 <span class="subheading mr-2">{{msg.qtdCurtidasP}}</span> <v-icon>mdi-thumb-up</v-icon>
                             </v-btn>
-                           
+
                             <v-btn class="ma-2" text icon color="red lighten-2" @click="curti(index, 'N')">
                                <span class="subheading mr-2">{{msg.qtdCurtidasN}}</span> <v-icon>mdi-thumb-down</v-icon>
                             </v-btn>
@@ -34,13 +34,13 @@
         </div>
     </div>
 </template>
-    
+
 <script>
 export default {
     props: ['coment'],
     methods:{
         apagarComentario(id){
-            this.coment.splice(id);
+            this.coment.splice(id, 1);
         },
         curti(id, status){
             this.coment.forEach((value, key) => {

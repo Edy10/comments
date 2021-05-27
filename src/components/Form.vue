@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-card class="form">
-      <h1>Olá, deixe aqui o seu pensamento do dia!</h1>
+      <h1>COMENTÁRIOS E POSTS</h1>
       <v-spacer></v-spacer>
         <v-form>
             <v-text-field v-model="comentario.nome" label="Name">
